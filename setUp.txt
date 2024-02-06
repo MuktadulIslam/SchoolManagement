@@ -1,0 +1,12 @@
+sudo apt update
+sudo apt install -y git
+sudo apt install -y curl
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt install -y nodejs
+
+git clone https://github.com/MuktadulIslam/SchoolManagement.git
+cd SchoolManagement/
+
+gnome-terminal -- bash -c 'cd backend && npm i && node index'
+gnome-terminal -- bash -c 'cd frontend && npm i && npm run dev'
+
